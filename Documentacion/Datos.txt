@@ -1,0 +1,7 @@
+Datos necesarios para crear colas Circulares				*
+*************************************************************
+Dos indices:												*
+	-->Frente (marca el inicio de la cola)					*
+	-->Fin (indica el maximo de la cola, se mueve una		*
+	posicion cuando se termina un proceso de la cola llena)	*
+*************************************************************
