@@ -1,0 +1,4 @@
+En el inventario de una tienda de víveres se ingresan los productos
+del almacen a como se van adquiriendo, ya que tienen una fecha de caducidad, 
+su sistema muestra que productos son los primeros que deberian de venderse
+primero para evitar que se queden almacenados hasta su caducidad.
