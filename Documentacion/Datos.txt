@@ -5,3 +5,16 @@ Dos indices:												*
 	-->Fin (indica el maximo de la cola, se mueve una		*
 	posicion cuando se termina un proceso de la cola llena)	*
 *************************************************************
+Condiciones:												*
+	->Cuando uno de los indices sea igual al punto max (ya 	*
+	que comienza en 0) colocar de nuevo el indice en la pos-*
+	icion 0.												*
+	->Cuando Mostremos la cola y no tenga datos debemos de  *
+	mostrar "No se han introducido datos".					*
+		(Lo sabemos cuando el frentees el siguiente del		*
+		indice fin (frente =0,fin =Max-1))					*
+	->Cuando ya esta llena la cola debemos mostrar "La cola	*
+	esta llena, No se pueden ingresar mas datos".			*
+		(cuando el indice frente+1 sea igual a fin)			*
+*************************************************************
+	
