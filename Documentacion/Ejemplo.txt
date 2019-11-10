@@ -2,3 +2,6 @@ En el inventario de una tienda de víveres se ingresan los productos
 del almacen a como se van adquiriendo, ya que tienen una fecha de caducidad, 
 su sistema muestra que productos son los primeros que deberian de venderse
 primero para evitar que se queden almacenados hasta su caducidad.
+
+Los productos entran en el orden de compra al almacen en donde podemos ver el producto mas antiguo, cuando sale el ultimo articulo de cierto producto el sistema informa que ya no hay en existencia.
+
