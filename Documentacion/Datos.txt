@@ -6,15 +6,33 @@ Dos indices:
 	posicion cuando se termina un proceso de la cola llena)	
 *************************************************************
 Condiciones:							
-	->Cuando uno de los indices sea igual al punto max (ya 	
+	1->Cuando uno de los indices sea igual al punto max (ya 	
 	que comienza en 0) colocar de nuevo el indice en la pos-
 	icion 0.												
-	->Cuando Mostremos la cola y no tenga datos debemos de  
+	2->Cuando Mostremos la cola y no tenga datos debemos de  
 	mostrar "No se han introducido datos".					
 		(Lo sabemos cuando el frentees el siguiente del		
 		indice fin (frente =0,fin =Max-1))					
-	->Cuando ya esta llena la cola debemos mostrar "La cola	
+	3->Cuando ya esta llena la cola debemos mostrar "La cola	
 	esta llena, No se pueden ingresar mas datos".			
 		(cuando el indice frente+1 sea igual a fin)			
 *************************************************************
-	
+Metodos:
+	crearCola:
+		Introducimos el tamaño de la cola (arreglo)
+	insertar:
+		Evalua si la cola no esta llena
+		evalua si fin no llego al punto maximo
+		coloca un dato en la cola por medio del indice
+		fin
+		avanza fin++
+	quitar:
+		Evalua si frente no esta en el punto maximo
+		Evaluar si la cola no esta vacia:
+		elimina (ejecuta) el proceso en la posicion (Frente)
+		mueve el indice frente++
+	verPrimerDato:
+		Evalua que la cola no este vacia
+		Muestra la cola en la posicion (Frente)
+***************************************************************
+		
