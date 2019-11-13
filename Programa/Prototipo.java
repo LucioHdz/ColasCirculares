@@ -17,10 +17,21 @@ public class Prototipo{
     }else{
       JOptionPane.showMessageDialog(null,"Cola llena :´c");
     }
-  public quitar(){
+  public void quitar(){
     if(!vacia()){
       frente = siguiente(frente);
+    }else{
+      JOptionPane.showMessageDialog(null,"Cola vacia, inserte datos");
     }
+  }
+  public void borrarCola(){
+    int i = frente;
+    String datos="";
+    do{
+      datos+="\nlaCircular ["+i+"]"+cola[i];
+      i = siguiente(i);
+    }while(i!=fin+1);
+    JOptionPane.showMessageDialog(null,datos);
   }
   private boolean vacia(){
     return frente ==siguiente(fin);
