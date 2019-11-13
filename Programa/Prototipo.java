@@ -4,6 +4,8 @@ public class Prototipo{
   String cola[];
   public Prototipo(){
     this.cola = new String [5];
+    this.frente = 0;
+    this.fin= maxTam-1;
   }
   private int siguiente(int dato){
     return (dato+1)%maxTam;
