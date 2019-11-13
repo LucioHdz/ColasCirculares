@@ -3,7 +3,7 @@ public class Prototipo{
   int frente,fin;
   String cola[];
   public Prototipo(){
-    cols = new String [5];
+    this.cola = new String [5];
   }
   private int siguiente(int dato){
     return (dato+1)%maxTam;
