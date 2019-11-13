@@ -13,6 +13,9 @@ public class Prototipo{
   public void insertar(String productos){
     if (!llena()){
       fin = siguiente(fin);
+      cola[fin]=poductos;
+    }else{
+      JOptionPaane.showMessageDialog(null,"Cola llena :´c");
     }
   public quitar(){
   
