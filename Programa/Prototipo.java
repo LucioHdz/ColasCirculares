@@ -13,12 +13,14 @@ public class Prototipo{
   public void insertar(String productos){
     if (!llena()){
       fin = siguiente(fin);
-      cola[fin]=poductos;
+      cola[fin]=productos;//usamos fin porque se añaden por el final de la cola
     }else{
-      JOptionPaane.showMessageDialog(null,"Cola llena :´c");
+      JOptionPane.showMessageDialog(null,"Cola llena :´c");
     }
   public quitar(){
-  
+    if(!vacia()){
+      frente = siguiente(frente);
+    }
   }
   private boolean vacia(){
     return frente ==siguiente(fin);
