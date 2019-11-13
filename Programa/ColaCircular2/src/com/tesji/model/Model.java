@@ -21,7 +21,7 @@ public class Model {
         this.frente = 0;
         this.fin = capacidad-1;
     }
-    public void insertar(){//hola
+    public void insertar(){//te jamo :3
         if(!llena()){
             fin = siguiente(fin);
             colaCircular[fin]=productoEntrada;
@@ -31,8 +31,8 @@ public class Model {
     }
     public void quitar(){
         if(!vacia()){
-            colaCircular[frente]=venderproducto();//elimina el producto-proceso
-            frente = (frente+1)%capacidad;
+            colaCircular[frente]=venderproducto();//elimina el producto o proceso
+            frente = siguiente(frente);
         }
     }
     public void verColaCompleta(){
