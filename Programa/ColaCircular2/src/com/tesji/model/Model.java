@@ -21,7 +21,7 @@ public class Model {
         this.frente = 0;
         this.fin = capacidad-1;
     }
-    public void insertar(){//te jamo :3
+    public void insertar(){
         if(!llena()){
             fin = siguiente(fin);
             colaCircular[fin]=productoEntrada;
