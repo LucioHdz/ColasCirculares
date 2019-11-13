@@ -39,10 +39,10 @@ public class Model {
         if(!vacia()){
             String colaCircularDatos = "";
             for (int i = frente; i < fin; i++) {
-                if(frente==capacidad){
-                    frente = 0;
+                if(i==capacidad){
+                    i = 0;
                 }
-                colaCircularDatos +="cola ["+frente+"]="+colaCircular[frente]+"\n";
+                colaCircularDatos +="cola ["+i+"]="+colaCircular[i]+"\n";
             }
             JOptionPane.showMessageDialog(null,colaCircularDatos);
         }else{
