@@ -21,7 +21,7 @@ public class Model {
         this.frente = 0;
         this.fin = capacidad-1;
     }
-    public void insertar(){
+    public void insertar(){//hola
         if(!llena()){
             fin = (fin+1)%capacidad;
             colaCircular[fin]=productoEntrada;
