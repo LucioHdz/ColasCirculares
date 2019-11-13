@@ -23,7 +23,7 @@ public class Model {
     }
     public void insertar(){//hola
         if(!llena()){
-            fin = (fin+1)%capacidad;
+            fin = siguiente(fin);
             colaCircular[fin]=productoEntrada;
         }else{
             JOptionPane.showMessageDialog(null,"Cola llena!! :(");
@@ -66,11 +66,6 @@ public class Model {
         return frente==siguiente(siguiente(fin));
     }
     private int  siguiente (int num){
-        if(num==capacidad-1){
-            num=0;
-        }else{
-            num++;
-        }
-        return num;
+        return (num+1)%capacidad;
     }
 }
